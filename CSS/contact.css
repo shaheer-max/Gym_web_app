@@ -1,0 +1,186 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600; 
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+    background: url('/img/contact\ us.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    opacity: 90%; 
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: inherit; /* Inherit background image from body */
+    background: rgba(0, 0, 0, 0.8);
+    filter: blur(10px);
+    z-index: -1; /* Ensure it stays behind the content */
+}
+.left{
+    display: inline-block;
+    position: absolute;
+    left: 34px;
+    top: 20px;
+    right: 24px;
+}
+.left img {
+    width: 100%;
+    max-width: 130px;
+    height: auto;
+}
+.right {
+    position: absolute;
+    top: 20px;
+    right: 24px;
+    display: flex;
+    align-items: center;  /* Align items vertically */
+    gap: 20px;  /* Space between the navigation items and the button */
+    z-index: 50;
+}
+.navigation li{
+    display: inline-block;
+     font-size: 16px;
+}
+
+.navigation li a{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+}
+.navigation li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px 23px;
+}
+.navigation li a:hover,.navigation li a:active{
+    text-decoration: underline;
+    transform: translateY(3px);
+    color: rgb(151, 137, 246);
+}
+.navigation li a.active {
+    text-decoration: underline;
+    color: rgb(141, 33, 110);
+    font-weight: 900;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('/img/contact us.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: -1;
+}
+
+.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(141, 33, 110);
+    padding: 30px 40px;
+    border-radius: 23px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border: 2px solid blue;
+}
+
+.form-container h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 23px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.form-container input[type="submit"] {
+    background: white;
+    color: rgb(141, 33, 110);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgb(141, 33, 110);
+    padding: 10px 20px;
+    width: auto;
+    margin: 20px auto 0;
+    display: block;
+    border-radius: 5px;
+}
+
+.form-container input[type="submit"]:hover {
+    background: rgb(21, 0, 156);
+    color: white;
+}.form-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(141, 33, 110);
+    padding: 30px 40px;
+    border-radius: 23px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+    border: 2px solid blue;
+  }
+  
+  .form-container h1 {
+    font-size: 2.5rem;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .form-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 23px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  .form-container input[type="submit"] {
+    background: white;
+    color: rgb(141, 33, 110);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border: 1px solid rgb(141, 33, 110);
+    padding: 10px 20px;
+    border-radius: 23px;
+  }
+  
+  .form-container input[type="submit"]:hover {
+    background: rgb(21, 0, 156);
+    color: white;
+  }
+  .form-container input[type="submit"]:hover {
+    background-color: rgb(151, 137, 246); /* Change background on hover */
+    color: white; /* Change text color on hover */
+  }
